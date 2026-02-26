@@ -43,3 +43,10 @@ Retrieval (retrieval): A package of tools designed to fetch information from var
 Vertex AI Search Tool (VertexAiSearchTool): This tool integrates with Google Cloud's Vertex AI Search service to allow the agent to search through your AI Applications data stores.
 
 With your Google Cloud console window selected, open Cloud Shell by pressing the G key and then the S key on your keyboard. Alternatively, you can click the Activate Cloud Shell button (Activate Cloud Shell) in the upper right of the Cloud console.
+
+Best practices for writing functions to be used as tools include
+Fewer Parameters are Better: Minimize the number of parameters to reduce complexity.
+Use Simple Data Types: Favor primitive data types like str and int over custom classes when possible.
+Use Meaningful Names: The function's name and parameter names significantly influence how the LLM interprets and utilizes the tool. Choose names that clearly reflect the function's purpose and the meaning of its inputs.
+Break Down Complex Functions: Instead of a single update_profile(profile: Profile) function, create separate functions like update_name(name: str), update_age(age: int), etc.
+Return status: Include a "status" key in your return dictionary to indicate the overall outcome (e.g., "success", "error", "pending") to provide the LLM a clear signal about the operation's state.
