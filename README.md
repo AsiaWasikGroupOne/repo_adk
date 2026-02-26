@@ -50,3 +50,8 @@ Use Simple Data Types: Favor primitive data types like str and int over custom c
 Use Meaningful Names: The function's name and parameter names significantly influence how the LLM interprets and utilizes the tool. Choose names that clearly reflect the function's purpose and the meaning of its inputs.
 Break Down Complex Functions: Instead of a single update_profile(profile: Profile) function, create separate functions like update_name(name: str), update_age(age: int), etc.
 Return status: Include a "status" key in your return dictionary to indicate the overall outcome (e.g., "success", "error", "pending") to provide the LLM a clear signal about the operation's state.
+
+
+Linki przydatne:
+
+https://docs.cloud.google.com/architecture/ai-ml
