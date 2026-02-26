@@ -57,3 +57,5 @@ Linki przydatne:
 https://docs.cloud.google.com/architecture/ai-ml
 https://docs.cloud.google.com/vertex-ai/generative-ai/docs/deploy/consumption-options
 https://github.com/google/adk-web/blob/main/README.md
+
+
